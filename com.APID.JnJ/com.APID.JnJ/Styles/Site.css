@@ -1,0 +1,562 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background:#d8d8d8;
+    font-size: .80em;
+    font-family:Calibri;
+    margin: 0px;
+    padding: 0px;
+    color:Green;
+}
+
+#fondo
+{
+    background:#d8d8d8;
+}
+
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color:Black ;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    /* Color principal */
+    width: 1355px;
+    background-color: #b6b7bc;
+    margin: 10px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background:#4b6c9e;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color:Black;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: White;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#3a4f63;
+    width:100%;
+}
+
+div.menu
+{
+    padding: 4px 0px 4px 8px;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #465c71;
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: White;
+}
+
+.loginDisplay a:link
+{
+    color: white;
+}
+
+.loginDisplay a:visited
+{
+    color:white;
+}
+
+.loginDisplay a:hover
+{
+    color:white;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* VENTANA MODAL Y ESTILOS POR DEFECTO  
+----------------------------------------------------------*/
+
+.modalBackground
+{
+    background-color:White;
+    filter: alpha(opacity=70);
+    opacity: 0.4;
+}
+
+.Label
+{
+    font-family:Calibri;
+    /*font-weight:bold;*/
+    font-size:medium;
+    color:Black;
+    }
+
+.Titulo
+{
+    font-family:Calibri;
+    font-size:42px;
+    font-weight:bold;
+    color:White;
+}
+
+.LabelTitulo
+{
+    font-family:Calibri;
+    font-size:18px;
+    font-weight:bold;
+    color:Black;
+}
+
+.LabelTituloEditar
+{
+    font-family:Calibri;
+    font-size:medium;
+    text-decoration:underline;
+    color:Blue
+}
+
+.LabelError
+{
+    font-family:Calibri;
+    font-size:medium;
+    font-weight:bold;
+    color:Red;
+}
+
+.LabelOk
+{
+    font-family:Calibri;
+    font-size:medium;
+    font-weight:bold;
+    color:Green;
+}
+
+.LabelFooter
+{
+    font-family:Calibri;
+    font-size:medium;
+    color:Black;
+}
+
+.TextBox
+{
+    font-family:Calibri;
+    font-size:medium;
+    /*font-weight:bold;*/
+    color:Black;
+}
+
+.Button
+{
+    font-family:Calibri;
+    font-size:medium;
+    color:White;
+    font-weight:bold;
+    /*background-color:#1C81C5;*/
+    background-color:#2F4F4F;
+    /*background-color:#4682B4;*/
+    margin-top: 0px;
+}
+
+.ControlEnable
+{
+    font-family:Calibri;
+    font-size:medium;
+    color:White;
+    background-color:gray;
+}
+
+.DropDown
+{
+    font-family:Calibri;
+    font-size:medium;
+    /*font-weight:bold;*/
+    color:Black;
+}
+
+.LabelHeader
+{
+    font-family:Calibri;
+    font-size:medium;
+    color:white;
+}
+
+.LinkSesion
+{
+    font-family:Calibri;
+    font-size:medium;
+    color:Black;
+}
+
+.LinkButton
+{
+    font-family:Calibri;
+    font-size:medium;
+    color:blue;
+}
+
+
+.ControlError
+{
+    font-family:Calibri;
+    font-size:medium;
+    color:Red;
+}
+
+.CheckBox
+{
+    font-family:Calibri;
+    font-size:medium;
+    color:Black;
+}
+
+.ListBox
+{
+    font-family:Calibri;
+    font-size:medium;
+    color:Black;
+}
+
+.Panel
+{
+    background-color: #b6b7bc;
+    font-family:Calibri;
+    font-size:medium;
+    color:Black;
+}
+
+.PanelPopUp
+{
+    background-color: #C0C0C0; /*Silver */
+    font-family:Calibri;
+    font-size:medium;
+    color:Black;
+}
+
+.ui-table { border-collapse: inherit !important; border: none; margin-bottom: 8px; background-color:white }
+.ui-table tr td { border: 1px solid #cccccc; border-right: none; border-bottom: none; padding: 3px 1px; }
+.ui-table tr th { border: 1px solid white; border-right: none; border-bottom: none; padding: 3px 1px; }
+/*.ui-table tr th { background: Black url(../image/ui/ui-bg_gloss-wave_30_92D400_500x100.png) 50% 50% repeat-x; font-size: 14px; font-weight: bold; color: white; }*/
+.ui-table tr th { background:  #003366 url(../image/ui/ui-bg_gloss-wave_30_92D400_500x100.png) 50% 50% repeat-x; font-size: 14px; font-weight: bold; color: white; }
+.ui-table tr:last-child td:first-child { border-radius: 0px 0px 0px 4px; }
+.ui-table tr:last-child td:last-child { border-radius: 0px 0px 4px 0px; }
+.ui-table tr:first-child th:first-child { border-radius: 4px 0px 0px 0px; }
+.ui-table tr:first-child th:last-child { border-radius: 0px 4px 0px 0px; border-right: 1px solid #92D400; }
+.ui-table tr td:last-child { border-right: 1px solid #cccccc; }
+.ui-table tr:last-child td { border-bottom: 1px solid #cccccc; }
+.ui-table tr:hover { background-color: #D9F0A4; }
+
+.GridviewScrollHeader TH, .GridviewScrollHeader TD
+{
+    padding: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    /*background-color: #EFEFEF;*/
+    vertical-align: bottom;
+    text-align: center;
+}
+.GridviewScrollItem TD
+{
+    padding: 5px;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    /*background-color: #FFFFFF;*/
+}
+.GridviewScrollItem .Freeze
+{
+    /*background-color: #EFEFEF;*/
+}
+.GridviewScrollItemHover TD
+{
+    padding: 5px;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    /*background-color: #CCCCCC;*/
+    cursor: pointer;
+}
+.GridviewScrollItemHover .Freeze
+{
+    /*background-color: #CCCCCC;*/
+}
+.GridviewScrollItemSelected TD
+{
+    padding: 5px;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    /*background-color: #FFFFFF;
+    color: #FF0000;*/
+}
+.GridviewScrollItemSelected .Freeze
+{
+    /*background-color: #FFFFFF;*/
+}
+.GridviewScrollPager 
+{
+    border-top: 1px solid #AAAAAA;
+    /*background-color: #FFFFFF;*/
+}
+.GridviewScrollPager TD
+{
+    padding-top: 3px;
+    font-size: 14px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.GridviewScrollPager A
+{
+    /*color: #666666;*/
+}
+
+.GridviewScrollPager SPAN
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.GridviewItemSelected
+{
+    /*padding: 5px;
+    white-space: nowrap;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;*/
+    background-color: red;
+}
+
+.scroll
+{
+height: 167px;
+}

@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.Master.cs" Inherits="com.APID.JnJ.SiteMaster" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+      <script language="javascript" type="text/javascript">
+          javascript: window.history.forward(1);
+      </script>     
+
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>    
+</head>
+<body>
+    <form runat="server">
+    <cc1:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                </cc1:ToolkitScriptManager>
+    <div class="page">
+        <div class="header">
+            
+            <div class="title">
+                <h1>
+                    <asp:Label ID="Label1" runat="server" CssClass="Titulo" Text="ADMINISTRADOR PLANOS INGENIERIA DIBUJO (APID)"></asp:Label>
+                </h1>
+            </div>
+
+            <div class="loginDisplay">
+                <asp:Label runat="server" ID="LBUser" CssClass="LabelHeader"></asp:Label>
+                <br />
+                <asp:LinkButton runat="server" ID="LoginUser" Text="Iniciar sesión" 
+                    CssClass="LabelHeader" onclick="LoginUser_Click"></asp:LinkButton>
+            </div>
+
+            <div class="clear hideSkiplink">
+            <asp:UpdatePanel ID="PNMenu" runat="server">
+            <ContentTemplate>
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal">
+                </asp:Menu>
+                </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+
+        </div>
+        
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        
+        <div class="clear" align="right">
+        </div>
+    </div>
+    <div class="footer">
+        <asp:Label ID="LBDerechos" runat="server" CssClass="Label" 
+            
+            Text="Copyright @ - All Rights Reserved - Johnson &amp; Johnson de Colombia 2015"></asp:Label>
+    </div>
+    </form>
+</body>
+</html>
+
